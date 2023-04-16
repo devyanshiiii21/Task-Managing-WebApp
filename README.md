@@ -1,6 +1,6 @@
 # Task-Managing-WebApp
 
-It is a basic Task Managing WebApp made using Django Framework.
+It is a simple Task Managing WebApp made using Django Framework.
 ## Setup:
 
 ### To run the project locally on your system:

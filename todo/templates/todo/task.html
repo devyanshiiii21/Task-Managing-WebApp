@@ -3,6 +3,7 @@
 <ul>
     {% for task in tasks %}
     <li>{{ task.title }}</li>
+    <td><a href="{% url 'task-update' task.id %}">Edit</a></td>
     {% empty %}
     <h4>No tasks</h4>
     {% endfor %}

@@ -21,7 +21,7 @@ class TaskList(LoginRequiredMixin,ListView):
 
 class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
-    fields = '__all__'
+    fields = {'title', 'description', 'completed'} 
     success_url = reverse_lazy('task-list')
 
     def form_valid(self, form):
@@ -30,7 +30,7 @@ class TaskCreate(LoginRequiredMixin, CreateView):
 
 class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
-    fields = '__all__'
+    fields = {'title', 'description', 'completed'}
     success_url = reverse_lazy('task-list')
 
 class TaskDelete(LoginRequiredMixin, DeleteView):
